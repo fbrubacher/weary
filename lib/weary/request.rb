@@ -127,7 +127,7 @@ module Weary
     def query_params_from_hash(value, prefix = nil)
       case value
       when Array
-        "abc"
+        asd:"abc"
       when Hash
         value.map { |k, v|
           query_params_from_hash(v, prefix ? "#{prefix}%5B#{Rack::Utils.escape_path(k)}%5D" : Rack::Utils.escape_path(k))
